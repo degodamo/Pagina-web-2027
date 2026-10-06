@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Ventas en línea</title>
+    <meta name="description" content="Explora consolas, laptops gamer, componentes y accesorios disponibles en Ventas en línea.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indesx.css">
+</head>
+<body>
+<header class="cabecera"><div class="cabecera__interior">
+    <a class="marca" href="index.html">Ventas en línea</a>
+    <nav class="menu-principal" id="menu" aria-label="Menú principal"><ul class="menu">
+        <li><a href="index.html">Inicio</a></li><li><a href="quienes-somos.html">¿Quiénes somos?</a></li><li><a href="productos.html" aria-current="page">Productos</a></li><li><a href="pedidos.html">Pedidos</a></li><li><a href="sucursales.html">Sucursales</a></li><li><a href="contacto.html">Contacto</a></li>
+    </ul></nav>
+    <div class="acciones"><a class="btn-carrito" href="index.html#productos">Ir a comprar</a><button class="btn-menu" id="btnMenu" aria-expanded="false" aria-controls="menu">Menú</button></div>
+</div></header>
+<main>
+    <section class="portada pagina-portada"><div class="portada__interior">
+        <p class="pagina-ceja">Equipos para cada proyecto</p><h1>Productos</h1>
+        <p>Encuentra consolas, equipos gamer y componentes. Los precios y el carrito interactivo están en la tienda.</p>
+        <a class="boton" href="index.html#productos">Abrir tienda</a>
+    </div></section>
+    <section class="seccion pagina-seccion">
+        <h2 class="seccion__titulo">Explora por categoría</h2>
+        <div class="productos pagina-productos">
+            <article class="producto" id="consolas" data-cat="consolas"><div class="producto__marca">Consolas</div><div class="producto__cuerpo"><h3>PlayStation 5</h3><p>Juega con carga rápida, gráficos envolventes y control DualSense.</p><a class="boton" href="index.html#productos">Ver en tienda</a></div></article>
+            <article class="producto" id="laptops" data-cat="laptops"><div class="producto__marca">Laptops</div><div class="producto__cuerpo"><h3>Laptop gamer</h3><p>Potencia portátil para jugar, crear y trabajar con fluidez.</p><a class="boton" href="index.html#productos">Ver en tienda</a></div></article>
+            <article class="producto" id="componentes" data-cat="componentes"><div class="producto__marca">Componentes</div><div class="producto__cuerpo"><h3>Memoria RAM y almacenamiento</h3><p>Mejora la capacidad y velocidad de tu equipo con componentes seleccionados.</p><a class="boton" href="index.html#productos">Ver en tienda</a></div></article>
+            <article class="producto" id="accesorios" data-cat="accesorios"><div class="producto__marca">Accesorios</div><div class="producto__cuerpo"><h3>Monitores y controles</h3><p>Completa tu espacio de juego con periféricos de alto rendimiento.</p><a class="boton" href="index.html#productos">Ver en tienda</a></div></article>
+        </div>
+    </section>
+</main>
+<footer class="pie"><p>&copy; <span id="anio">2026</span> Ventas en línea. Todos los derechos reservados.</p></footer>
+<script src="paginas.js"></script>
+</body>
+</html>

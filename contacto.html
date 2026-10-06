@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Ventas en línea</title>
+    <meta name="description" content="Contacta a Ventas en línea para consultas sobre productos, pedidos y asesoría técnica.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indesx.css">
+</head>
+<body>
+<header class="cabecera"><div class="cabecera__interior">
+    <a class="marca" href="index.html">Ventas en línea</a>
+    <nav class="menu-principal" id="menu" aria-label="Menú principal"><ul class="menu">
+        <li><a href="index.html">Inicio</a></li><li><a href="quienes-somos.html">¿Quiénes somos?</a></li><li><a href="productos.html">Productos</a></li><li><a href="pedidos.html">Pedidos</a></li><li><a href="sucursales.html">Sucursales</a></li><li><a href="contacto.html" aria-current="page">Contacto</a></li>
+    </ul></nav>
+    <div class="acciones"><a class="btn-carrito" href="index.html#productos">Ver catálogo</a><button class="btn-menu" id="btnMenu" aria-expanded="false" aria-controls="menu">Menú</button></div>
+</div></header>
+<main>
+    <section class="portada pagina-portada"><div class="portada__interior"><p class="pagina-ceja">Estamos para orientarte</p><h1>Hablemos de tu próximo equipo</h1><p>Déjanos tu consulta y te ayudaremos a encontrar el producto o la solución adecuada.</p></div></section>
+    <section class="seccion pagina-seccion contacto-pagina"><div><h2 class="seccion__titulo">Escríbenos</h2><p class="seccion__texto">Para una respuesta directa, contáctanos por WhatsApp o visita una de nuestras ciudades de atención.</p><a class="boton" href="https://wa.me/" target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a><p><a href="sucursales.html">Ver ciudades de atención</a></p></div>
+        <form class="formulario formulario-contacto-pagina" id="formContactoPagina">
+            <label>Nombre<input type="text" name="nombre" autocomplete="name" required></label>
+            <label>Correo electrónico<input type="email" name="correo" autocomplete="email" required></label>
+            <label>¿En qué podemos ayudarte?<textarea name="mensaje" rows="4" required></textarea></label>
+            <button class="boton" type="submit">Enviar consulta</button>
+            <p class="estado" id="estadoContactoPagina" role="status"></p>
+        </form>
+    </section>
+</main>
+<footer class="pie"><p>&copy; <span id="anio">2026</span> Ventas en línea. Todos los derechos reservados.</p></footer>
+<script src="paginas.js"></script>
+</body>
+</html>

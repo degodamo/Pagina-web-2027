@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas en línea | PlayStation 5, laptops gamer y memoria RAM</title>
+    <meta name="description" content="Compra PlayStation 5, laptops gamer y memoria RAM por mayor y por menor. Sucursales en Lima, Chiclayo, Tarapoto, Cajamarca y Huancayo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indesx.css">
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+
+<header class="cabecera">
+    <div class="cabecera__interior">
+        <a class="marca" href="index.html">Ventas en línea</a>
+
+        <nav class="menu-principal" id="menu" aria-label="Menú principal">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">¿Quiénes somos?</a></li>
+                <li>
+                    <a href="productos.html">Productos</a>
+                    <ul class="submenu">
+                        <li><a href="productos.html#consolas">PlayStation 5</a></li>
+                        <li><a href="productos.html#laptops">Laptop gamer</a></li>
+                        <li><a href="productos.html#componentes">Memoria RAM 16 GB</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="pedidos.html">Pedidos</a>
+                    <ul class="submenu">
+                        <li><a href="pedidos.html#mayor">Por mayor</a></li>
+                        <li><a href="pedidos.html#menor">Por menor</a></li>
+                        <li><a href="pedidos.html#partes">Por partes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sucursales.html">Sucursales</a>
+                    <ul class="submenu">
+                        <li><a href="sucursales.html#lima">Lima</a></li>
+                        <li><a href="sucursales.html#chiclayo">Chiclayo</a></li>
+                        <li><a href="sucursales.html#tarapoto">Tarapoto</a></li>
+                        <li><a href="sucursales.html#cajamarca">Cajamarca</a></li>
+                        <li><a href="sucursales.html#huancayo">Huancayo</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="acciones">
+            <button class="btn-carrito" id="abrirCarrito" aria-label="Abrir carrito">
+                Carrito <span class="contador" id="contador">0</span>
+            </button>
+            <button class="btn-menu" id="btnMenu" aria-expanded="false" aria-controls="menu">Menú</button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="portada" id="inicio">
+        <div class="portada__interior">
+            <div class="portada__contenido">
+                <h1>Tecnología para jugar, trabajar y vender en línea</h1>
+                <p>Consolas, laptops y componentes con envío a todo el país. Compra una unidad o por mayor.</p>
+                <ul class="etiquetas" aria-label="Productos destacados">
+                    <li>PlayStation 5</li>
+                    <li>Laptop gamer</li>
+                    <li>Memoria RAM 16 GB</li>
+                </ul>
+                <a class="boton" href="#productos">Ver productos</a>
+                <dl class="cifras">
+                    <div><dt>Sucursales</dt><dd>5</dd></div>
+                    <div><dt>Envíos</dt><dd>A todo el Perú</dd></div>
+                    <div><dt>Garantía</dt><dd>12 meses</dd></div>
+                </dl>
+            </div>
+            <img class="portada__imagen" src="fotos/Gemini_Generated_Image_2i5pmm2i5pmm2i5p.jpg" alt="PlayStation 5, laptop gamer y memorias RAM en un espacio tecnológico moderno" loading="lazy">
+        </div>
+    </section>
+
+    <section class="seccion" id="quienes-somos">
+        <h2 class="seccion__titulo">¿Quiénes somos?</h2>
+        <p class="seccion__texto">Vendemos tecnología con garantía y atención personalizada. Estos son nuestros tres frentes de trabajo.</p>
+        <div class="contenedor">
+            <article class="tarjeta">
+                <img src="fotos/Gemini_Generated_Image_ea8tikea8tikea8t.jpg" alt="Laptop gamer ejecutando programas de inteligencia artificial y renderizado exigente" loading="lazy">
+                <div class="tarjeta__texto">
+                    <h3>Inteligencia artificial</h3>
+                    <p>Equipos con la potencia necesaria para entrenar modelos, editar video y ejecutar herramientas de IA sin esperas.</p>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <img src="fotos/Gemini_Generated_Image_lnk90ulnk90ulnk9.jpg" alt="Fila de servidores modernos en un centro de datos para servicios de hosting" loading="lazy">
+                <div class="tarjeta__texto">
+                    <h3>Ventas de hosting</h3>
+                    <p>Planes de alojamiento web para tu tienda o negocio, con soporte en español y activación inmediata.</p>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <img src="fotos/Gemini_Generated_Image_z84bvbz84bvbz84b.jpg" alt="Catálogo de productos tecnológicos con consolas, laptop gamer y componentes" loading="lazy">
+                <div class="tarjeta__texto">
+                    <h3>Ejemplos de productos</h3>
+                    <p>Una selección de consolas, laptops gamer y memorias RAM disponibles hoy en nuestras sucursales.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="seccion" id="productos">
+        <h2 class="seccion__titulo">Productos</h2>
+        <div class="herramientas">
+            <div class="filtros" id="filtros" role="group" aria-label="Filtrar por categoría">
+                <button class="filtro activo" data-cat="todos">Todos</button>
+                <button class="filtro" data-cat="consolas">Consolas</button>
+                <button class="filtro" data-cat="laptops">Laptops</button>
+                <button class="filtro" data-cat="componentes">Componentes</button>
+                <button class="filtro" data-cat="accesorios">Accesorios</button>
+            </div>
+            <label class="buscador">
+                <span class="solo-lectores">Buscar producto</span>
+                <input type="search" id="buscar" placeholder="Buscar producto...">
+            </label>
+        </div>
+        <div class="productos" id="listaProductos" aria-live="polite"></div>
+    </section>
+
+    <section class="seccion" id="pedidos">
+        <h2 class="seccion__titulo">Pedidos</h2>
+        <div class="pedidos">
+            <article class="pedido">
+                <h3>Por mayor</h3>
+                <p>Desde 5 unidades, con precios especiales y factura.</p>
+            </article>
+            <article class="pedido">
+                <h3>Por menor</h3>
+                <p>Compra una unidad y recógela en tu sucursal más cercana.</p>
+            </article>
+            <article class="pedido">
+                <h3>Por partes</h3>
+                <p>Arma tu equipo componente por componente, con asesoría.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="seccion" id="sucursales">
+        <h2 class="seccion__titulo">Sucursales</h2>
+        <ul class="sucursales">
+            <li>Lima</li><li>Chiclayo</li><li>Tarapoto</li><li>Cajamarca</li><li>Huancayo</li>
+        </ul>
+    </section>
+
+    <section class="seccion" id="contacto">
+        <h2 class="seccion__titulo">Contacto</h2>
+        <form class="formulario" id="formContacto" novalidate>
+            <label>Nombre
+                <input type="text" name="nombre" autocomplete="name" required>
+                <small class="error" data-error="nombre"></small>
+            </label>
+            <label>Correo electrónico
+                <input type="email" name="correo" autocomplete="email" required>
+                <small class="error" data-error="correo"></small>
+            </label>
+            <label>Mensaje
+                <textarea name="mensaje" rows="4" required></textarea>
+                <small class="error" data-error="mensaje"></small>
+            </label>
+            <button class="boton" type="submit">Enviar mensaje</button>
+            <p class="estado" id="estadoForm" role="status"></p>
+        </form>
+    </section>
+
+    <section id="seccionCheckout" class="seccion checkout" hidden>
+        <h2 class="seccion__titulo">Solicitar cotización</h2>
+        <div class="checkout__grid" id="checkoutGrid">
+            <form id="formCheckout" class="checkout__form" novalidate>
+                <h3>Datos de contacto y entrega</h3>
+                <div class="campo">
+                    <label for="cNombre">Nombre completo *</label>
+                    <input type="text" id="cNombre" name="nombre" autocomplete="name" required>
+                    <span class="error" data-error="nombre"></span>
+                </div>
+                <div class="campo-grupo">
+                    <div class="campo">
+                        <label for="cCorreo">Correo electrónico *</label>
+                        <input type="email" id="cCorreo" name="correo" autocomplete="email" required>
+                        <span class="error" data-error="correo"></span>
+                    </div>
+                    <div class="campo">
+                        <label for="cTelefono">Teléfono / WhatsApp *</label>
+                        <input type="tel" id="cTelefono" name="telefono" autocomplete="tel" required>
+                        <span class="error" data-error="telefono"></span>
+                    </div>
+                </div>
+                <div class="campo-grupo">
+                    <div class="campo">
+                        <label for="cCiudad">Ciudad *</label>
+                        <select id="cCiudad" name="ciudad" required>
+                            <option value="">Selecciona tu ciudad</option>
+                            <option value="Lima">Lima</option>
+                            <option value="Chiclayo">Chiclayo</option>
+                            <option value="Tarapoto">Tarapoto</option>
+                            <option value="Cajamarca">Cajamarca</option>
+                            <option value="Huancayo">Huancayo</option>
+                            <option value="Otra">Otra ciudad</option>
+                        </select>
+                        <span class="error" data-error="ciudad"></span>
+                    </div>
+                    <div class="campo">
+                        <label for="cDireccion">Dirección de entrega *</label>
+                        <input type="text" id="cDireccion" name="direccion" autocomplete="street-address" required>
+                        <span class="error" data-error="direccion"></span>
+                    </div>
+                </div>
+                <h3>Preferencia de pago</h3>
+                <div class="metodos-pago">
+                    <label class="metodo-opcion"><input type="radio" name="metodoPago" value="Yape / Plin" checked><span>Yape / Plin</span></label>
+                    <label class="metodo-opcion"><input type="radio" name="metodoPago" value="Tarjeta"><span>Tarjeta de crédito / débito</span></label>
+                    <label class="metodo-opcion"><input type="radio" name="metodoPago" value="Contra entrega"><span>Pago contra entrega</span></label>
+                </div>
+                <button type="submit" class="boton">Preparar cotización</button>
+                <button type="button" id="btnCancelarCheckout" class="boton boton--secundario">Volver al catálogo</button>
+            </form>
+            <aside class="checkout__resumen" aria-label="Resumen de la cotización">
+                <h3>Resumen de tu pedido</h3>
+                <ul id="checkoutLista" class="checkout__lista"></ul>
+                <div class="checkout__total"><span>Total estimado</span><strong id="checkoutTotal">S/ 0</strong></div>
+            </aside>
+        </div>
+        <div id="mensajeExito" class="checkout__exito" role="status" hidden>
+            <h3>Tu cotización está lista</h3>
+            <p id="detallePedidoExito"></p>
+            <p>Esta demostración no envía la solicitud ni procesa pagos.</p>
+            <button id="btnVolverInicio" class="boton" type="button">Seguir comprando</button>
+        </div>
+    </section>
+</main>
+
+<aside class="carrito" id="carrito" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="carrito__cabecera">
+        <h2>Tu carrito</h2>
+        <button id="cerrarCarrito" aria-label="Cerrar carrito">Cerrar</button>
+    </div>
+    <ul class="carrito__lista" id="carritoLista"></ul>
+    <div class="carrito__pie">
+        <p>Total: <strong id="carritoTotal">S/ 0</strong></p>
+        <button class="boton" id="solicitarCotizacion" type="button">Solicitar cotización</button>
+        <button class="boton" id="vaciar">Vaciar carrito</button>
+    </div>
+</aside>
+<div class="velo" id="velo" hidden></div>
+
+<footer class="pie">
+    <ul class="redes" aria-label="Redes sociales">
+        <li>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M10 9l5 3-5 3z"/></svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://t.me/" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer" aria-label="Twitch">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.43l-3 3v-3H6.857V1.714h13.714Z"/></svg>
+            </a>
+        </li>
+    </ul>
+    <p>&copy; <span id="anio">2026</span> Ventas en línea. Todos los derechos reservados.</p>
+</footer>
+<!-- CHAT BOX -->
+<button id="btnChat" class="btn-chat" aria-label="Abrir asistente">
+    💬
+</button>
+
+<div id="chatBox" class="chat-box" aria-hidden="true">
+
+    <div class="chat-header">
+        <div>
+            <strong>🤖 Asistente TechStore</strong>
+            <small>Estamos para ayudarte</small>
+        </div>
+
+        <button id="cerrarChat" class="cerrar-chat" aria-label="Cerrar chat">
+            ×
+        </button>
+    </div>
+
+    <div id="chatMensajes" class="chat-mensajes">
+        <div class="mensaje bot">
+            👋 ¡Hola! Soy el asistente de TechStore.
+            <br><br>
+            Puedo ayudarte con productos, precios, envíos, pagos, garantía y compras.
+            <br><br>
+            <strong>Escribe tu pregunta o selecciona una de las opciones.</strong>
+        </div>
+    </div>
+
+    <div class="preguntas-chat">
+        <button data-pregunta="¿Qué productos venden?">🛒 Productos</button>
+        <button data-pregunta="¿Hacen envíos a todo el Perú?">🚚 Envíos</button>
+        <button data-pregunta="¿Qué métodos de pago aceptan?">💳 Pagos</button>
+        <button data-pregunta="¿Los productos tienen garantía?">🛡️ Garantía</button>
+        <button data-pregunta="¿Cómo puedo realizar una compra?">🛍️ Comprar</button>
+    </div>
+
+    <form id="chatForm" class="chat-form">
+        <input
+            type="text"
+            id="chatInput"
+            placeholder="Escribe tu pregunta..."
+            autocomplete="off"
+        >
+
+        <button type="submit">➤</button>
+    </form>
+
+</div>
+  <div id="modalCotizacion" class="cotizacion-overlay" hidden>
+    <div class="cotizacion-container">
+      <button id="cerrarCotizacion" class="btn-cerrar-cotizacion" aria-label="Cerrar">&times;</button>
+      
+      <div class="cotizacion-header">
+        <div class="icono-header">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M21.7 7.3l-5-5c-.4-.4-1-.4-1.4 0l-12 12c-.2.2-.3.4-.3.7v5c0 .6.4 1 1 1h5c.3 0 .5-.1.7-.3l12-12c.4-.4.4-1 0-1.4zM7.6 19H5v-2.6l9.6-9.6 2.6 2.6L7.6 19z"/>
+          </svg>
+        </div>
+        <h2>Formulario de Registro y Cotización</h2>
+        <p>Completa tus datos para recibir asesoría personalizada o registrarte en nuestra plataforma digital.</p>
+      </div>
+
+      <form id="formCotizacion" class="cotizacion-form" novalidate>
+        <div class="cotizacion-grid">
+          <div class="campo-grupo">
+            <label for="cotNombre"><span class="icono-label">👤</span> Nombre Completo *</label>
+            <input type="text" id="cotNombre" name="nombre" placeholder="Ej. Carlos Mendoza" required>
+            <span class="cot-error" data-error="nombre"></span>
+          </div>
+
+          <div class="campo-grupo">
+            <label for="cotCorreo"><span class="icono-label">✉️</span> CORREO ELECTRÓNICO *</label>
+            <input type="email" id="cotCorreo" name="correo" placeholder="correo@ejemplo.com" required>
+            <span class="cot-error" data-error="correo"></span>
+          </div>
+
+          <div class="campo-grupo">
+            <label for="cotTelefono"><span class="icono-label">📞</span> Teléfono / WhatsApp *</label>
+            <input type="tel" id="cotTelefono" name="telefono" placeholder="+51 900 000 000" required>
+            <span class="cot-error" data-error="telefono"></span>
+          </div>
+
+          <div class="campo-grupo">
+            <label for="cotTipo"><span class="icono-label">📌</span> Tipo de Solicitud</label>
+            <select id="cotTipo" name="tipo">
+              <option value="Menor">Compra por Menor / Unidad</option>
+              <option value="Mayor">Compra por Mayor / Distribuidor</option>
+              <option value="Cotizacion">Cotización Formal para Empresa</option>
+              <option value="Asesoria">Asesoría Técnica</option>
+            </select>
+          </div>
+
+          <div class="campo-grupo campo-full">
+            <label for="cotMensaje"><span class="icono-label">💬</span> Mensaje o Requerimiento</label>
+            <textarea id="cotMensaje" name="mensaje" rows="3" placeholder="Escribe los detalles de tu consulta o productos de tu interés..."></textarea>
+            <span class="cot-error" data-error="mensaje"></span>
+          </div>
+        </div>
+
+        <div class="cotizacion-acciones">
+          <button type="submit" class="btn-enviar-cotizacion">Enviar Solicitud</button>
+        </div>
+      </form>
+
+      <div id="cotizacionExito" class="cotizacion-exito" hidden>
+        <div class="exito-check">✓</div>
+        <h3>¡Solicitud Enviada!</h3>
+        <p>Hemos recibido tus datos correctamente. Un asesor se pondrá en contacto contigo a la brevedad.</p>
+        <button id="btnVolverTienda" class="btn-enviar-cotizacion">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 2. Vincular los archivos JavaScript al final -->
+  <script src="index.js"></script>
+  <script src="formulario.js"></script>
+
+</body>
+</html>

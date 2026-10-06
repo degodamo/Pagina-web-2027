@@ -1,0 +1,88 @@
+<!-- ---------- SECCIÓN FORMULARIO DE COMPRA ---------- -->
+<section id="seccionCheckout" class="checkout container" hidden>
+  <h2>Finalizar Compra</h2>
+
+  <div class="checkout__grid">
+    <!-- Formulario de datos -->
+    <form id="formCheckout" class="checkout__form" novalidate>
+      <h3>Datos de Envío y Contacto</h3>
+
+      <div class="campo">
+        <label for="cNombre">Nombre completo *</label>
+        <input type="text" id="cNombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+        <span class="error" data-error="nombre"></span>
+      </div>
+
+      <div class="campo-grupo">
+        <div class="campo">
+          <label for="cCorreo">Correo electrónico *</label>
+          <input type="email" id="cCorreo" name="correo" placeholder="juan@ejemplo.com" required>
+          <span class="error" data-error="correo"></span>
+        </div>
+
+        <div class="campo">
+          <label for="cTelefono">Teléfono / WhatsApp *</label>
+          <input type="tel" id="cTelefono" name="telefono" placeholder="987654321" required>
+          <span class="error" data-error="telefono"></span>
+        </div>
+      </div>
+
+      <div class="campo-grupo">
+        <div class="campo">
+          <label for="cCiudad">Ciudad *</label>
+          <select id="cCiudad" name="ciudad" required>
+            <option value="">Selecciona tu ciudad</option>
+            <option value="Lima">Lima</option>
+            <option value="Chiclayo">Chiclayo</option>
+            <option value="Tarapoto">Tarapoto</option>
+            <option value="Cajamarca">Cajamarca</option>
+            <option value="Huancayo">Huancayo</option>
+            <option value="Otra">Otra ciudad</option>
+          </select>
+          <span class="error" data-error="ciudad"></span>
+        </div>
+
+        <div class="campo">
+          <label for="cDireccion">Dirección de entrega *</label>
+          <input type="text" id="cDireccion" name="direccion" placeholder="Av. Principal 123, Dpto 4" required>
+          <span class="error" data-error="direccion"></span>
+        </div>
+      </div>
+
+      <h3>Método de Pago</h3>
+      <div class="metodos-pago">
+        <label class="metodo-opcion">
+          <input type="radio" name="metodoPago" value="yape" checked>
+          <span>Yape / Plin</span>
+        </label>
+        <label class="metodo-opcion">
+          <input type="radio" name="metodoPago" value="tarjeta">
+          <span>Tarjeta de Crédito / Débito</span>
+        </label>
+        <label class="metodo-opcion">
+          <input type="radio" name="metodoPago" value="contraentrega">
+          <span>Pago Contra Entrega</span>
+        </label>
+      </div>
+
+      <button type="submit" class="boton boton--primario">Confirmar Pedido</button>
+      <button type="button" id="btnCancelarCheckout" class="boton boton--secundario">Volver al catálogo</button>
+    </form>
+
+    <!-- Resumen del pedido -->
+    <aside class="checkout__resumen">
+      <h3>Resumen de tu Pedido</h3>
+      <ul id="checkoutLista" class="checkout__lista"></ul>
+      <div class="checkout__total">
+        <span>Total a pagar:</span>
+        <strong id="checkoutTotal">S/ 0.00</strong>
+      </div>
+    </aside>
+  </div>
+
+  <div id="mensajeExito" class="checkout__exito" hidden>
+    <h3>🎉 ¡Pedido confirmado con éxito!</h3>
+    <p id="detallePedidoExito"></p>
+    <button id="btnVolverInicio" class="boton">Seguir comprando</button>
+  </div>
+</section>
